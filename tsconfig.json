@@ -2,14 +2,21 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "react-native-skorku-sdk": ["./src/index"]
+      "react-native-skorku-sdk": [
+        "./src/index"
+      ],
+      "@assets": [
+        "./src/assets"
+      ]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,

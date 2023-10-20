@@ -1,31 +1,15 @@
-import * as React from 'react';
+import React from 'react';
+// import AppRouter from './router';
+import { Text, View } from 'react-native';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-skorku-sdk';
-
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+function App(): JSX.Element {
 
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
+    <View>
+      <Text>under development</Text>
+      {/* <AppRouter /> */}
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-});
+export default App;
